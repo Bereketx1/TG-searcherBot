@@ -15,7 +15,7 @@ print("Bot started")
 
 @client.on(telethon.events.NewMessage(pattern="^/start"))
 async def start(event):
-    await event.reply("Hello, I'm a bot to search chats and channels from given query!", buttons=[Button.url("Source", "https://github.com/TechiError/TG-searcherBot"), Button.url("Join @TechiError", "https://t.me/TechiError")])
+    await event.reply("Hello, I'm a bot to search chats and channels from given query!", buttons=[Button.url("Developer", "https://t.me/bereketx"), Button.url("Join our Channel", "https://t.me/Brain_math")])
 
 @client.on(telethon.events.NewMessage(pattern="^/search"))
 async def search(event):
