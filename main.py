@@ -15,7 +15,7 @@ print("Bot started")
 
 @client.on(telethon.events.NewMessage(pattern="^/start"))
 async def start(event):
-    await event.reply("Hello, I'm a bot to search chats and channels from given query!", buttons=[Button.url("Developer", "https://t.me/Bereketx"), Button.url("Join our Channel", "https://t.me/Ethio_Apps_Store")])
+    await event.reply("Hello, I'm a bot to search chats and channels from given query! በቀላሉ /search ብላችሁ የምትፈልጉትን ነገር መፃፍ ነዉ። ከዛ እኔ ከሱ ጋር የሚገናኙ የ Telegram ቻናሎችን እልክሎታለሁ።", buttons=[Button.url("Developer", "https://t.me/Bereketx"), Button.url("Join our Channel", "https://t.me/Ethio_Apps_Store")])
 
 @client.on(telethon.events.NewMessage(pattern="^/search"))
 async def search(event):
